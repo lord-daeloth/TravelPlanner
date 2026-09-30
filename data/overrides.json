@@ -1,0 +1,200 @@
+{
+  "zones": {
+    "9": {
+      "access_note": "Pso'Xja has separate entrances and sealed routes; check the required tower and mission access."
+    },
+    "27": {
+      "access_note": "Phomiuna Aqueducts: mission access and door/key mechanics may apply."
+    },
+    "28": {
+      "access_note": "Sacrarium: mission access and door/key mechanics may apply."
+    },
+    "29": {
+      "access_note": "Riverne: mission access and Giant Scale gates may apply."
+    },
+    "30": {
+      "access_note": "Riverne: mission access and Giant Scale gates may apply."
+    },
+    "33": {
+      "access_note": "Al'Taieu requires Chains of Promathia progression."
+    },
+    "72": {
+      "access_note": "Alzadaal: entry fee/permit and internal teleporters may be needed."
+    },
+    "147": {
+      "access_note": "Beadeaux: sealed sections may require key items."
+    },
+    "150": {
+      "access_note": "Monastic Cavern: check the correct entrance; sealed sections may require a Crimson Orb."
+    },
+    "151": {
+      "access_note": "Castle Oztroja: switches, passwords and doors may affect passage."
+    },
+    "153": {
+      "access_note": "The Boyahda Tree: ledges and one-way drops affect internal travel."
+    },
+    "159": {
+      "access_note": "Temple of Uggalepih: doors, keys and internal routes may restrict passage."
+    },
+    "160": {
+      "access_note": "Den of Rancor: lantern/door requirements may apply."
+    },
+    "169": {
+      "access_note": "Toraimarai Canal: entrance-specific key item or Horutoto gate access may be required."
+    },
+    "174": {
+      "access_note": "Kuftal Tunnel: a timed rock door may affect passage."
+    },
+    "176": {
+      "access_note": "Sea Serpent Grotto: coin doors restrict some sections."
+    },
+    "190": {
+      "access_note": "King Ranperre's Tomb: sealed doors and separate sections may restrict passage."
+    },
+    "193": {
+      "access_note": "Ordelle's Caves: separate entrances and one-way drops; verify the internal route."
+    },
+    "195": {
+      "access_note": "Eldieme Necropolis: separate entrances, switch doors and one-way drops; verify the internal route."
+    },
+    "197": {
+      "access_note": "Crawlers' Nest: separate entrances and ledges; verify the internal route."
+    },
+    "200": {
+      "access_note": "Garlaige Citadel: Banishing Gates and one-way drops; gate access may be needed."
+    },
+    "208": {
+      "access_note": "Quicksand Caves: separate entrances and weight-operated doors; verify the internal route."
+    },
+    "192": {
+      "access_note": "Inner Horutoto Ruins: separate entrances and the Three Mage Gate may restrict passage."
+    },
+    "263": {
+      "region": "East Ulbuka"
+    },
+    "264": {
+      "region": "East Ulbuka"
+    },
+    "266": {
+      "region": "East Ulbuka"
+    },
+    "267": {
+      "region": "East Ulbuka"
+    },
+    "272": {
+      "region": "East Ulbuka"
+    },
+    "273": {
+      "region": "East Ulbuka"
+    },
+    "274": {
+      "region": "East Ulbuka"
+    },
+    "275": {
+      "region": "East Ulbuka"
+    },
+    "276": {
+      "region": "East Ulbuka"
+    },
+    "277": {
+      "region": "East Ulbuka"
+    },
+    "278": {
+      "region": "East Ulbuka"
+    },
+    "281": {
+      "region": "East Ulbuka",
+      "average_level": 0,
+      "level_status": "reviewed_no_normal_enemies",
+      "level_source": "Reviewed town/airship classification; no ordinary hostile population."
+    },
+    "282": {
+      "region": "East Ulbuka"
+    },
+    "299": {
+      "region": "East Ulbuka"
+    },
+    "280": {
+      "region": "Adoulin Islands"
+    },
+    "283": {
+      "region": "Adoulin Islands",
+      "average_level": 0,
+      "level_status": "reviewed_no_normal_enemies",
+      "level_source": "Reviewed town/airship classification; no ordinary hostile population."
+    },
+    "284": {
+      "region": "Adoulin Islands"
+    },
+    "294": {
+      "region": "Dynamis"
+    },
+    "295": {
+      "region": "Dynamis"
+    },
+    "296": {
+      "region": "Dynamis"
+    },
+    "297": {
+      "region": "Dynamis"
+    },
+    "279": {
+      "region": "The Threshold"
+    },
+    "298": {
+      "region": "The Threshold"
+    },
+    "288": {
+      "region": "Escha / Reisenjima"
+    },
+    "289": {
+      "region": "Escha / Reisenjima"
+    },
+    "290": {
+      "region": "Escha / Reisenjima"
+    },
+    "291": {
+      "region": "Escha / Reisenjima"
+    },
+    "292": {
+      "region": "Escha / Reisenjima"
+    },
+    "293": {
+      "region": "Escha / Reisenjima"
+    },
+    "53": {
+      "average_level": 0,
+      "level_status": "reviewed_no_normal_enemies",
+      "level_source": "Reviewed town/airship classification; no ordinary hostile population."
+    },
+    "223": {
+      "average_level": 0,
+      "level_status": "reviewed_no_normal_enemies",
+      "level_source": "Reviewed town/airship classification; no ordinary hostile population."
+    },
+    "224": {
+      "average_level": 0,
+      "level_status": "reviewed_no_normal_enemies",
+      "level_source": "Reviewed town/airship classification; no ordinary hostile population."
+    },
+    "225": {
+      "average_level": 0,
+      "level_status": "reviewed_no_normal_enemies",
+      "level_source": "Reviewed town/airship classification; no ordinary hostile population."
+    },
+    "226": {
+      "average_level": 0,
+      "level_status": "reviewed_no_normal_enemies",
+      "level_source": "Reviewed town/airship classification; no ordinary hostile population."
+    }
+  },
+  "connections": [
+    {
+      "from": 100,
+      "to": 167,
+      "kind": "walk",
+      "disabled": true,
+      "note": "Bostaunieux Oubliette exit ledge is one-way into West Ronfaure."
+    }
+  ]
+}
