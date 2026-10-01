@@ -2,6 +2,8 @@
 local events, buttons, texts = {}, {}, {}
 local current, active = 100, 1
 local event_active, render_count = 0, 0
+local login_status, target_index, entity_present = 2, 1, true
+GetPlayerEntity = function() if entity_present then return {} end end
 addon = {}
 T = function(v) return v end
 bit = require('bit')
@@ -40,8 +42,9 @@ ashita.memory = {
     read_uint8 = function(address) assert(address == 2000); return event_active end,
 }
 local party = { GetMemberZone = function() return current end, GetMemberIsActive = function() return active end,
-                GetMemberServerId = function() return active end }
-AshitaCore = { GetMemoryManager = function() return { GetParty = function() return party end } end }
+                GetMemberServerId = function() return active end, GetMemberTargetIndex = function() return target_index end }
+local player = { GetLoginStatus = function() return login_status end }
+AshitaCore = { GetMemoryManager = function() return { GetParty = function() return party end, GetPlayer = function() return player end } end }
 assert(loadfile('TravelPlanner.lua'))()
 events.d3d_present()
 buttons['Plan route'] = true; events.d3d_present()
@@ -60,10 +63,23 @@ events.command({ command = '/tp expand' }); events.d3d_present()
 assert(not config.collapsed)
 config.current_start = false; events.d3d_present()
 config.mode = 'safest'; buttons['Plan route'] = true; events.d3d_present(); events.d3d_present()
-active = 0; events.d3d_present()
-local found = false
-for _, text in ipairs(texts) do if text == 'Current: Unavailable' then found = true end end
-assert(found, 'Logged-out state must be unavailable')
+for _, collapsed in ipairs({ false, true }) do
+    config.collapsed = collapsed
+    local before = render_count
+    -- Stale party data must not make the title or character-selection UI render.
+    for _, status in ipairs({ 0, 1, 3 }) do
+        login_status = status; events.d3d_present()
+        assert(render_count == before and config.visible, 'Hide outside logged-in world')
+    end
+    login_status = 2; target_index = 0; events.d3d_present()
+    assert(render_count == before, 'Hide when player target is unavailable')
+    target_index = 1; entity_present = false; events.d3d_present()
+    assert(render_count == before, 'Hide while zoning without a player entity')
+    entity_present = true; active = 0; events.d3d_present()
+    assert(render_count == before, 'Hide when party player is inactive')
+    active = 1; events.d3d_present()
+    assert(render_count == before + 1 and config.collapsed == collapsed, 'Restore previous mode on world entry')
+end
 local unrelated = { command = '/targetnpc' }; events.command(unrelated); assert(not unrelated.blocked)
 local command = { command = '/tp hide' }; events.command(command); assert(command.blocked and not config.visible)
 local before = render_count

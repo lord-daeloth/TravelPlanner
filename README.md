@@ -14,10 +14,11 @@ An **Ashita v4 addon for Final Fantasy XI** that plans routes between zones and 
 - Expand to plan and review the complete route; collapse to see your current and next zone.
 - Advance automatically as you zone and replan if you leave the route.
 - Hide automatically during cutscenes and restore your previous window mode afterward.
+- Hide outside the logged-in world, including title/character selection and zoning. The map and ordinary in-game menus do not hide the addon.
 
 ## Installation
 
-1. Download **TravelPlanner-v1.0.1.zip** from the [latest release](https://github.com/lord-daeloth/TravelPlanner/releases/latest). Use the attached addon ZIP rather than GitHub's automatically generated source archive.
+1. Download the **TravelPlanner-v&lt;version&gt;.zip** attachment from the [latest release](https://github.com/lord-daeloth/TravelPlanner/releases/latest). Use the attached addon ZIP rather than GitHub's automatically generated source archive.
 2. Extract it into your `Ashita/addons/` directory. The result should be `Ashita/addons/TravelPlanner/TravelPlanner.lua`.
 3. In game, run:
 

@@ -1,6 +1,6 @@
 addon.name = 'TravelPlanner'
-addon.author = 'TravelPlanner contributors'
-addon.version = '1.0.1'
+addon.author = 'Daeloth'
+addon.version = '1.0.2'
 addon.desc = 'Plan routes between Vana\'diel zones.'
 
 require('common')
@@ -198,11 +198,20 @@ ashita.events.register('command', 'travelplanner_command', function(e)
 end)
 
 ashita.events.register('d3d_present', 'travelplanner_present', function()
-    local party = AshitaCore:GetMemoryManager():GetParty()
+    local memory = AshitaCore:GetMemoryManager()
+    local party = memory:GetParty()
+    local player = memory:GetPlayer()
     local zone = party and party:GetMemberZone(0) or 0
-    if zone == 0 or not party or party:GetMemberIsActive(0) == 0 or party:GetMemberServerId(0) == 0 then zone = nil end
+    -- Login status and a live player distinguish the world from title/character
+    -- selection and zoning, even while old party data is still present. Do not
+    -- use menu or entity-render flags: the map must not suppress this window.
+    if not player or player:GetLoginStatus() ~= 2 or zone == 0 or not party
+        or party:GetMemberIsActive(0) == 0 or party:GetMemberServerId(0) == 0
+        or party:GetMemberTargetIndex(0) == 0 or GetPlayerEntity() == nil then
+        zone = nil
+    end
     state:update(zone)
-    draw()
+    if zone ~= nil then draw() end
 end)
 
 ashita.events.register('unload', 'travelplanner_unload', save)

@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.2 — 2026-09-30
+
+- Set addon author to Daeloth.
+- Hide on title/character-selection screens and while no in-world player is available.
+- Preserve cutscene hiding without suppressing the window for the map or ordinary in-game menus.
+
 ## 1.0.1 — 2026-09-30
 
 First public GitHub release, including the cutscene-visibility update.
