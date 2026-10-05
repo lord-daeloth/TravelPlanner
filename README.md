@@ -16,6 +16,16 @@ An **Ashita v4 addon for Final Fantasy XI** that plans routes between zones and 
 - Hide automatically during cutscenes and restore your previous window mode afterward.
 - Hide outside the logged-in world, including title/character selection and zoning. The map and ordinary in-game menus do not hide the addon.
 
+## Screenshots
+
+**Expanded mode** — choose your destination, compare routing options, and review the full route.
+
+![TravelPlanner expanded mode showing zone selection and a route from Northern San d'Oria to Davoi](expanded.png)
+
+**Collapsed mode** — keep your current zone and next destination in view while traveling.
+
+![TravelPlanner collapsed mode showing Northern San d'Oria as the current zone and Carpenters' Landing as the next zone](collapsed.png)
+
 ## Installation
 
 1. Download the **TravelPlanner-v&lt;version&gt;.zip** attachment from the [latest release](https://github.com/lord-daeloth/TravelPlanner/releases/latest). Use the attached addon ZIP rather than GitHub's automatically generated source archive.
