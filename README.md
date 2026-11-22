@@ -6,6 +6,9 @@ An **Ashita v4 addon for Final Fantasy XI** that plans routes between zones and 
 
 ## Features
 
+- Dark interface with customizable accent colors, separate planning and route panels, numbered stop cards, and a compact travel view. Drag the header background to reposition the window.
+- Expanded and collapsed modes remember separate positions per character, including across reloads.
+- Open **Appearance** in expanded mode for six palette presets, or mix two independent accents from Cyan, Violet, Coral red, Gold, Green, Sky blue, Rose and Silver. Choices apply to both modes and are saved per character.
 - Choose a starting zone or use your current zone.
 - Filter each zone selector by region and text search, with an **All** regions option.
 - Choose **Fastest** for the fewest zone changes or **Least dangerous** for the lowest average enemy level across the route.
@@ -20,11 +23,17 @@ An **Ashita v4 addon for Final Fantasy XI** that plans routes between zones and 
 
 **Expanded mode** — choose your destination, compare routing options, and review the full route.
 
-![TravelPlanner expanded mode showing zone selection and a route from Northern San d'Oria to Davoi](expanded.png)
+![TravelPlanner expanded mode with gold and silver accents, showing a route from Northern San d'Oria to the Temple of Uggalepih](expanded.png)
 
 **Collapsed mode** — keep your current zone and next destination in view while traveling.
 
-![TravelPlanner collapsed mode showing Northern San d'Oria as the current zone and Carpenters' Landing as the next zone](collapsed.png)
+![TravelPlanner collapsed mode with gold and silver accents, showing Northern San d'Oria as the current zone and Port San d'Oria as the next stop](collapsed.png)
+
+## Appearance and placement
+
+Open **Appearance** in expanded mode to choose Aurora, Ember, Forest, Ocean, Twilight or Moonlight, or mix your own **Primary accent** and **Secondary accent** from eight colors selected for readability against the dark background. The screenshots above use Gold and Silver. Appearance changes apply to both modes without clearing your route; access warnings stay gold and visited stops stay green.
+
+Drag the header background to position each mode separately. Expanded and collapsed positions, along with your color choices, are saved per character and restored after reloading.
 
 ## Installation
 

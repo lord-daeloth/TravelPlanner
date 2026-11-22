@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.1.0 — Unreleased
+
+- Add six palette presets and two independent dark-background-friendly accent selectors, saved per character.
+- Remember independent expanded and collapsed window positions per character.
+- Add an independent dark ImGui theme with cyan/violet accents and a gradient header rule.
+- Separate planning controls and the journey into two scrollable panels.
+- Display numbered route cards with current/visited states, level summaries and access tooltips.
+- Redesign the compact window with clearer current/next-stop labels and remaining zone changes.
+- Keep the existing routing, cutscene hiding and login-screen hiding behavior.
+
 ## 1.0.2 — 2026-09-30
 
 - Set addon author to Daeloth.

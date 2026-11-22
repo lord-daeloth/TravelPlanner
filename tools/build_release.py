@@ -6,7 +6,7 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 FILES = (
-    'TravelPlanner.lua', 'controller.lua', 'planner.lua', 'data/zones.lua',
+    'TravelPlanner.lua', 'ui.lua', 'controller.lua', 'planner.lua', 'data/zones.lua',
     'README.md', 'CHANGELOG.md', 'LICENSE', 'LICENSE-DATA.txt',
     'docs/DATA.md', 'docs/DEVELOPMENT.md',
 )
