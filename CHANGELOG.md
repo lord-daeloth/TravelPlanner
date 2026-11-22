@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.1.0 — Unreleased
+## 1.1.0 — 2026-11-21
 
 - Add six palette presets and two independent dark-background-friendly accent selectors, saved per character.
 - Remember independent expanded and collapsed window positions per character.
