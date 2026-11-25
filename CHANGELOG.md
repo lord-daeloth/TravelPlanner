@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.1 — 2026-11-24
+
+- Exclude the false Gustav Tunnel → Cape Teriggan shortcut to Kuftal Tunnel. Preserve the reverse direction and add regression coverage for journeys from Gustav and Selbina.
+
 ## 1.1.0 — 2026-11-21
 
 - Add six palette presets and two independent dark-background-friendly accent selectors, saved per character.

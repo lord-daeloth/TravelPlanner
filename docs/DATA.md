@@ -17,4 +17,6 @@ These are **LandSandBoat levels, not verified CatsEyeXI levels**. Retail-era hig
 
 The graph treats a zone as one node. Disconnected map sections, one-way interior drops, gates, elevators and local terrain can make a sequence of zone names impractical from a particular entrance. Complex dungeon routes show access cautions, but this addon is a zone-sequence planner, not an intra-zone navigator. Exit coordinates retained in the dataset are raw game coordinates, not map-grid directions.
 
+A player-reported correction excludes Gustav Tunnel → Cape Teriggan: that exit reaches an isolated ledge below a one-way drop, not the main Cape or the route to Kuftal Tunnel. Cape Teriggan → Gustav Tunnel remains available. This conservative exclusion also prevents planning a trip ending at that ledge; enabling access requirements does not restore the excluded direction.
+
 LandSandBoat-derived data is distributed under **GPL-3.0-or-later**; the license is in `LICENSE-DATA.txt`. Source URLs and the importer preserve attribution and reproducibility. TravelPlanner's newly written Lua and tooling are also available under GPL-3.0-or-later.

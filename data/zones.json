@@ -14831,7 +14831,9 @@
               ]
             }
           ],
-          "source": "https://raw.githubusercontent.com/LandSandBoat/server/6c421d33414cf4a7fb3434930def196e4b3a97cb/data/zones/gustav_tunnel/zone.yaml"
+          "source": "https://raw.githubusercontent.com/LandSandBoat/server/6c421d33414cf4a7fb3434930def196e4b3a97cb/data/zones/gustav_tunnel/zone.yaml",
+          "disabled": true,
+          "note": "Player-reported terrain correction: Gustav exits onto an isolated Cape Teriggan ledge below a one-way drop. It cannot reach the main Cape or Kuftal Tunnel. Excluded conservatively because the planner does not model zone subareas; Cape to Gustav remains available."
         }
       ],
       "source": "https://raw.githubusercontent.com/LandSandBoat/server/6c421d33414cf4a7fb3434930def196e4b3a97cb/data/zones/gustav_tunnel/zone.yaml",

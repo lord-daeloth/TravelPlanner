@@ -190,6 +190,13 @@
   },
   "connections": [
     {
+      "from": 212,
+      "to": 113,
+      "kind": "walk",
+      "disabled": true,
+      "note": "Player-reported terrain correction: Gustav exits onto an isolated Cape Teriggan ledge below a one-way drop. It cannot reach the main Cape or Kuftal Tunnel. Excluded conservatively because the planner does not model zone subareas; Cape to Gustav remains available."
+    },
+    {
       "from": 100,
       "to": 167,
       "kind": "walk",

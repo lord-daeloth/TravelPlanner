@@ -1,6 +1,6 @@
 addon.name = 'TravelPlanner'
 addon.author = 'Daeloth'
-addon.version = '1.1.0'
+addon.version = '1.1.1'
 addon.desc = 'Plan routes between Vana\'diel zones.'
 
 require('common')

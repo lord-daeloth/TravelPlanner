@@ -86,6 +86,18 @@ c:update(2); check(c.job.paused and c.cursor == 2, 'Movement freezes unfinished 
 c:update(nil); check(select(2, c:next_zone()) == 'Current zone unavailable.', 'Zoning/logged-out state')
 
 local data = require('data.zones')
+-- Cape's Gustav entrance is below a one-way drop, not a through route.
+for _,start in ipairs({212,248}) do
+    local r=planner.route(data,start,174,'fastest',{allow_restricted=true})
+    check(r~=nil, 'Kuftal remains reachable by an alternative walking route')
+    for i=1,#r.path-1 do
+        check(not (r.path[i]==212 and r.path[i+1]==113), 'No Gustav-to-Cape shortcut')
+    end
+end
+local blocked,reverse=false,false
+for _,e in ipairs(data[212].connections) do if e.to==113 then blocked=e.disabled end end
+for _,e in ipairs(data[113].connections) do if e.to==212 then reverse=not e.disabled end end
+check(blocked and reverse, 'Terrain exclusion is directional and cannot be enabled by access options')
 check(planner.route(data, 230, 244, 'fastest').changes == 5, 'San d\'Oria to Jeuno walking')
 check(planner.route(data, 126, 158, 'fastest').changes == 3, 'Delkfutt scripted stair connections')
 check(planner.route(data, 239, 242, 'fastest').changes == 1, 'Heavens Tower entrance')
